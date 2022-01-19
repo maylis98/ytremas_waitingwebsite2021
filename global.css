@@ -75,7 +75,7 @@
     --ui-radius-card  : .5rem;
     --ui-radius-img: 3.3rem;
      
-   }
+}
 
   /*--------------------------------------------------------------
   | 2.0 FOUNDATION
@@ -209,7 +209,7 @@ small {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 87.7vh;
+    height: 100vh;
     position: relative;
     z-index: 1;
   }
@@ -255,7 +255,7 @@ small {
   color: var(--color-1);
 }
 
-  .ui-drop-menu{
+.ui-drop-menu{
   display:none;
   position: absolute;
   flex-direction: row;
