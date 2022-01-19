@@ -1,0 +1,190 @@
+@import url("https://use.typekit.net/llf4aez.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+	
+    /*------------------------------------------------------------
+     | 1.1 COLOR
+     ------------------------------------------------------------*/	
+   
+       /* COLOR PALETTE */
+   
+      --color-n-000: #DBFF00;
+      --color-n-100: #ffffff;
+      --color-n-300: #000000;
+      --color-n-500: #5F5F5F;
+   
+        /* COLOR HIERARCHY */
+      
+      --color-1: var(--color-n-000);
+      --color-2: var(--color-n-100);
+      --color-3: var(--color-n-300);
+      --color-4: var(--color-n-500);
+    
+        /* typo COLOR */
+    
+      --color-typo-heading: var(--color-n-500);
+      --color-typo-body: var(--color-n-100);
+      --color-typo-note: var(--color-n-100);
+      --color-typo-button: var(--color-n-300);
+   
+    /*------------------------------------------------------------
+     | 1.2 TYPOGRAPHY
+     ------------------------------------------------------------*/
+   
+     /* --typo-labeur: sneakers-pro,sans-serif; */
+   
+     /* FONT SIZE */
+   
+    --typo-h1: 2.3rem;
+    --typo-h2: 3rem;
+    --typo-p : 1.4rem;
+    --typo-p4: 2rem;
+    --typo-s : .8125rem;
+    --typo-min : 1rem;
+   
+     /* LEADING */
+   
+    --typo-h1-leading: 2;
+    --typo-h2-leading: 1.2;
+    --typo-h4-leading: 1.25;
+    --typo-p-leading : 1.5;
+
+    --letter-spacing-p: 0.05em;
+   
+     /* MARGIN */
+   
+    --typo-margin-heading: .75rem;
+    --typo-margin-body   : 1.125rem;
+   
+     /*------------------------------------------------------------
+     | 1.2 LAYOUT
+     ------------------------------------------------------------*/
+   
+     /* CONTAINER */
+     
+    --ui-layout-container: 1.25rem;
+    --ui-layout-container-padding: 1rem;
+    --ui-layout-grid: 3.625rem;
+    --ui-layout-gutter: 1rem;
+   
+     /* BORDER RADIUS */
+     
+    --ui-radius-button: 5rem;
+    --ui-radius-card  : .5rem;
+    --ui-radius-img: 3.3rem;
+     
+   }
+
+  /*--------------------------------------------------------------
+  | 2.0 FOUNDATION
+  --------------------------------------------------------------*/
+
+  html { 
+    box-sizing: border-box; 
+    cursor: crosshair;}
+
+  *,
+*:before,
+*:after { 
+  box-sizing: inherit; 
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--color-1);
+  font-feature-settings: "liga", "kern";
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+/*--------------------------------------------------------------
+| 5.1 TEXT STYLING
+--------------------------------------------------------------*/
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--typo-p);
+}
+
+.p2{
+  font-size: var(--typo-s);
+  line-height: var(--typo-p-leading);
+  color: var(--color-4);
+  letter-spacing: var(--letter-spacing-p);
+}
+
+em{
+  color: var(--color-4);
+}
+
+a{
+  text-decoration: none;
+ }
+
+/*--------------------------------------------------------------
+| 5.2 MENU ANIMATION
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+| 6.2 BUTTON
+--------------------------------------------------------------*/
+
+.component-button {
+  border: .0625rem;
+  border-radius: var(--ui-radius-button);
+  display: block;
+  padding-top :0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left : 1rem;
+  padding-right : 1rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-typo-button);
+  background-color:var(--color-2);
+}
+
+.component-button:hover{
+  -webkit-box-shadow:inset 0px 0px 0px 3px var(--color-2);
+  -moz-box-shadow:inset 0px 0px 0px 3px var(--color-2);
+  box-shadow:inset 0px 0px 0px 3px var(--color-2);
+  color: var(--color-2);
+  background-color:var(--color-3);
+}
+
+.component-button > a {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+.component-button > a:hover {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+small { 
+  font-family:'Roboto', sans-serif;
+  font-size: var(--typo-p); 
+}
+
+.on-left{
+  width: 70%;
+  margin-right: 2rem;
+}
+
+.on-right{
+  text-align: end;
+  /* text-transform: uppercase; */
+}
+
+/*------------------------------------------------------------
+  | 7.1 SCROLLBAR
+  ------------------------------------------------------------*/	
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
