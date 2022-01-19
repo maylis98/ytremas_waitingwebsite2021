@@ -188,3 +188,47 @@ small {
     display: none;
   }
 
+  h1{
+    font-family: sneakers-pro, sans-serif;
+    font-size: var(--typo-h1); 
+    color: var(--color-3);
+    letter-spacing: 0.05em;
+    line-height: var(--typo-h2-leading);
+    text-align: center;
+  }
+  
+  .logo-home{
+    position: fixed;
+    top:10%;
+    left: 1%;
+    z-index: 2;
+  }
+  
+  .carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 87.7vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .arrow-left{
+    position: fixed;
+    left:1%;
+    top:47%;
+    z-index:10;
+  }
+  
+  .arrow-right{
+    position: fixed;
+    right:1%;
+    top:47%;
+    z-index:10;
+  }
+
